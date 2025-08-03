@@ -1,0 +1,54 @@
+button{
+    background-color: #E4CDDD;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+span{
+    color: #E4CDDD;
+}
+
+.offer1{
+    border: 1px solid black;
+}
+
+.offers{
+    display: grid;
+    grid-template-column: 1fr 1fr;
+    gap: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+header {
+  display: flex;               /* makes items align in a row */
+  justify-content: space-between; /* spreads items left & right */
+  align-items: center;         /* centers them vertically */
+  padding: 10px 20px;
+  background: #E4CDDD;
+  color: white;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
