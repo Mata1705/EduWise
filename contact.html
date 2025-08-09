@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWise</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        .body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        
+    </style>
+</head>
+</head>
+<body>
+    <header>
+        <div class="logo">EduWise</div>
+        <nav>
+         <a href="index.html">Home</a>
+         <a href="pastpapers.html">Past Papers</a>
+         <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="body">
+    <section id="suggest-feature">
+        <h2>Suggest a Feature</h2>
+        <p>Have an idea to improve EduWise? Let us know below!</p>
+  
+        <form class="custo-form" action="https://formspree.io/f/mldlpqpb" method="POST">
+            <label for="name">Your Name:</label><br />
+            <input type="text" id="name" name="name" placeholder="Name"><br /><br />
+
+            <label for="email">Email (optional):</label><br />
+            <input type="email" id="email" name="email" placeholder="you@example.com"><br /><br />
+
+            <label for="feature">Feature Suggestion:</label><br />
+            <textarea id="feature" name="feature" rows="6" placeholder="Describe your idea..." required></textarea><br /><br />
+
+            <button type="submit">Submit Suggestion</button>
+        </form>
+   </section>
+   </div>
+
+</body>
+</html>
