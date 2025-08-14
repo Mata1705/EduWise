@@ -19,14 +19,34 @@
 </head>
 </head>
 <body>
-    <header>
-        <div class="logo">EduWise</div>
-        <nav>
-         <a href="index.html">Home</a>
-         <a href="grade.html">Past Papers</a>
-         <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">
+            <h1>Eduwise</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pastpapers12.html">Past Papers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+        }
+    </script>
 
     <div class="body">
     <section id="suggest-feature">
@@ -48,5 +68,6 @@
    </section>
    </div>
 
+   <script src="https://kit.fontawesome.com/eecf2173e8.js" crossorigin="anonymous"></script>
 </body>
 </html>

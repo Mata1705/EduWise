@@ -5,16 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduWise</title>
     <link rel="stylesheet" href="style.css"/>
+    
 </head>
 <body>
-    <header>
-        <div class="logo">EduWise</div>
-        <nav>
-         <a href="index.html">Home</a>
-         <a href="grade.html">Past Papers</a>
-         <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">
+            <h1>Eduwise</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pastpapers12.html">Past Papers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+        }
+    </script>
 
     <div class="title">
      <h2>Welcome to <span>EduWise</span></h2>
@@ -22,13 +43,13 @@
         practice resources, and tools designed to support your academic success at every level.</p>
      
 
-     <div class="buttons">
+     <div class="buttons"><br/> <br/> 
         <button><a href="grade.html">Browse Resources</a></button>
      </div>
     </div>  
 
     <div class="middle">
-        <h2>Why choose <span>EduWise</span></h2>
+        <h2>Why choose <span>EduWise</span></h2><br/> 
 
         <div class="offers">
             <div class="offer1">
@@ -52,10 +73,10 @@
                 <p class="word"></p>
             </div>-->
         </div>
-    </div>
+    </div><br/> <br/> 
     
     <div class="offer">
-        <h2>What We Offer</h2>
+        <h2>What We Offer</h2><br/> 
 
         <div class="offers">
             <div class="offer1">
@@ -84,9 +105,13 @@
     <button><a href="grade.html">Start Leaning Today</a></button><br/><br/>
 
     <footer>
-        <p>EduWise shares links to helpful educational resources to make learning easier.</br/> 
+        
+        <p>Disclaimer!<br/>
+            EduWise shares links to helpful educational resources to make learning easier.</br/> 
             Unless stated otherwise, we're not connected with or endorsed by the sites we link to, and we can't</br/>  
             guarantee their content or availability.</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/eecf2173e8.js" crossorigin="anonymous"></script>
 </body>
 </html>
